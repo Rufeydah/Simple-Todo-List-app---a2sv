@@ -1,73 +1,81 @@
-# React + TypeScript + Vite
+# 📝 React + TypeScript Todo List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Todo List application built using **React**, **TypeScript**, and **CSS**.  
+It demonstrates core concepts such as components, hooks, props, state management, and TypeScript type definitions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## React Compiler
+> Add your images (1.png, 2.png, 3.png) inside the `public/` folder or `src/assets/`, then update the paths below.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Screenshot 1](./public/1.png)  
+![Screenshot 2](./public/2.png)  
+![Screenshot 3](./public/3.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Project Requirements
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This project was created to fulfill the following requirements:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Learn how to use **React with TypeScript**
+- Create reusable **components** and use **React hooks**
+- Style the application using **CSS**
+- Build a functional Todo List that allows users to:
+  - Add tasks
+  - Edit tasks
+  - Delete tasks
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Add new todos  
+- Edit existing todos  
+- Delete todos  
+- Clean and simple UI  
+- Fully typed with TypeScript  
+- Component-based architecture  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **CSS**
+
+---
+
+## 📦 Installation & Setup
+
+Follow these steps to run the project locally:
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+
+
+2️⃣ Navigate into the project folder
+cd your-repo-name
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Run the development server
+npm run dev
+
+
+The app will start on:
+http://localhost:5173
+
+🏗️ Build for production
+npm run build
+
+📤 Deployment Instructions
+
+Push the project to your GitHub repository
+Make sure your README.md is included
+Add your repository link to the Progress Tracker Google Sheet
