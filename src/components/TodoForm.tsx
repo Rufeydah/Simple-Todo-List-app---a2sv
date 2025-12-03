@@ -8,7 +8,7 @@ interface TodoFormProps {
 const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
   const [text, setText] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!text.trim()) return;
     addTodo(text);
@@ -19,7 +19,7 @@ const TodoForm: React.FC<TodoFormProps> = ({ addTodo }) => {
     <form onSubmit={handleSubmit} className="todo-form">
       <input
         type="text"
-        placeholder="Adddd a new task..."
+        placeholder="Add a new task..."
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
